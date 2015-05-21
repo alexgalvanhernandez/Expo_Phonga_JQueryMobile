@@ -6,48 +6,59 @@
 <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/miJS.js" type="text/javascript"></script>
+
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
 <body> 
 
-<div data-role="page" id="page" data-theme="a">
-	<div data-role="header" data-theme="b">
-    	<h1>Encabezado</h1>	
+<div data-role="page" id="page" data-theme="a" >
+	<div data-role="header" >
+    	<h1>PhoneGap & JqueryMobile</h1>	
     </div>
     
     <div data-role="content" data-theme="b">
-    	<div data-role="listview" data-theme="b">
-        	<li> <a href="#page2"> Segunda Pagina </a></li>
-        	<li> <a href="#page3"> Segunda Pagina </a></li>
+    	
+        <ul data-role="listview" data-theme="b">
+        	<li> <a href="#page2"> Pagina de consulta </a></li>
+        	<li> <a href="operaciones.html"> Suma de dos numeros</a></li>
+        </ul>
 
-        </div>
+        
     </div>
     
-    <div data-role="footer" data-theme="b">
-    	<h4>Pie de pagina<h4>
+    <div data-role="footer" data-position="fixed" >
+    	<h4>Expo<h4>
     </div>
 
 </div>
-<div data-role="page" id="page2">
+<div data-role="page" id="page2" data-theme="b">
   <div data-role="header">
-    <h1>Header</h1>
+    <h1>Contenidos</h1>
   </div>
-  <div data-role="content">Content</div>
-  <div data-role="footer">
-    <h4>Footer</h4>
+  <div data-role="content" data-theme="b">
+ 	 <div data-role="collapsible">
+  		<h2>Contenido 1</h2>
+  		<p>
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  		</p>
+      </div>
+    <div data-role="collapsible">
+   
+    <h2>Contenido 2</h2>
+  	<p>
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  	</p>
+   </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Pie de pagina</h4>
   </div>
 </div>
-<div data-role="page" id="page3">
-  <div data-role="header">
-    <h1>Header</h1>
-  </div>
-  <div data-role="content">Content</div>
-  <div data-role="footer">
-    <h4>Footer</h4>
-  </div>
-</div>
+
 
 </body>
 </html>
