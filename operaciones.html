@@ -1,60 +1,57 @@
 
 
 <!DOCTYPE html>
- <head>
-   <meta charset="UTF-8">
- 
+ <head> 
  <meta charset= "utf-8">
  <title>Operaciones</title>
- <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
- <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
- <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
- <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 
- <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/mjs.js" type="text/javascript"></script>
 
-
-<script src="js/testing.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<script> 
-function valor()
- {
-	 var n1 = document.getElementById("textinput").value;
-	 var n2 = document.getElementById("textinput2").value;
-	 var Result= (parseint(n1) + parseint(n2));
-	 $("#resultado").html(Reslt);
-	
- }
-</script>
+ 
+
+ 
+
 
 
 </head>
- <body onload="onBodyLoad();">
- <div data-role="page" id="page3">
+ <body onLoad="onBodyLoad()">
+ <div data-role="page" id="page">
   
-   <div data-role="content" align="center">Simple suma</div>
-      <div data-role="fieldcontain">
+ <div data-role="content" align="center" id="ope">Simple suma</div>
+ <div data-role="fieldcontain">
         <label for="textinput">Primer dato:</label>
-        <input type="text" name="textinput" id="textinput" value=""  />
+        <input type="text" name="textinput" id="txt1" value=""  />
       </div>
-      <div data-role="fieldcontain">
+ <div data-role="fieldcontain">
         <label for="textinput2">Segundo dato:</label>
-        <input type="text" name="textinput2" id="textinput2" value=""  />
+        <input type="text" name="textinput2" id="txt2" value=""  />
       </div>
-
-         <div data-role="controlgroup">
-        <input type="button" value="Suma"  name="Suma" onClick="valor();"/>
-    
-      </div>
-      <div data-role="content" id="resultado" data-theme="b">
-      test 1.0
-      </div>
-   
-      
-      
- 
-  
+ <div data-role="fieldcontain">
+   <label for="textinput3">Resultado</label>
+   <input type="text" name="textinput3" id="res" value=""  />
  </div>
+      
+ <div data-role="controlgroup">
+   <div class="ui-grid-a">
+     <div class="ui-block-a">   <input type="button" value="+"  name="Suma" onclick="suma();"/></div>
+     <div class="ui-block-b"><input type="button" value="-"  name="Resta" onclick="resta();"/></div>
+     <div class="ui-block-a"><input type="button" value="*"  name="Multiplicacion" onclick="multi();"/></div>
+     <div class="ui-block-b"><input type="button" value="/"  name="Divcion" onclick="div();"/></div>
+   </div>
+               
+        
+        
+     
+    
+      
+ </div>
+               
+</div>
    
  </body>
  </html> 
