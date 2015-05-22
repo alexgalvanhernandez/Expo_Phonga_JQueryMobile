@@ -5,5 +5,5 @@ function onBodyLoad(){
 	}
 function onDeviceReady()
 {
-	$("resultado").html("Esta en marcha jsPhonegap");
+	$("#resultado").html("Esta en marcha jsPhonegap");
 	}
