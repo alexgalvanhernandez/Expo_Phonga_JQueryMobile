@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.Expo"
+    version   = "1.0.0">
+
+<name>PhoneGap Expo xD</name>
+
+<description> 
+Ejemplo para la expo de phongab
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Alejandro Galvan Hernandez
+</author>
+
+<preference name="phonegap-version" value="3.1.0"/>
+
+
+</widget>
